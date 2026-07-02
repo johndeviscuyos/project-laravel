@@ -12,6 +12,7 @@ services:
     env_file:
       - .env
     volumes:
+      - ./:/usr/share/nginx/html:rw
       - storage:/usr/share/nginx/html/storage:rw
       - ./public:/usr/share/nginx/html/public:rw
 
